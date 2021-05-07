@@ -1,0 +1,29 @@
+{
+	"name" : "fgsl/authentication",
+	"type" : "framework",
+	"description" : "Extensions of Laminas Authentication",
+	"keywords" : [
+		"framework",
+		"mvc"
+	],
+	"homepage" : "https://github.com/fgsl/authentication",
+	"license" : "AGPL-3.0-or-later",
+	"autoload" : {
+		"psr-4" : {
+			"Fgsl\\" : "src/Fgsl"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Fgsl\\Test\\" : "tests/"
+		}
+	},
+	"require" : {
+		"php" : "^7.2",
+		"laminas/laminas-authentication" : "^2.7.0",
+		"doctrine/orm": "^2.8"
+	},
+	"config" : {
+		"secure-http" : false
+	}
+}
